@@ -4,7 +4,7 @@ import "./globals.css";
 import Providers from "@/components/Providers";
 
 const source_sans_3 = Source_Code_Pro({ subsets: ["latin"] });
-export const poppins = Poppins({
+const poppins = Poppins({
   subsets: ["latin"],
   display: "swap",
   weight: ["400", "500", "600", "700"],
