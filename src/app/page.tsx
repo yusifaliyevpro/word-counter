@@ -32,7 +32,7 @@ export default function Home() {
               inputWrapper:
                 "bg-transparent p-4  group-data-[focus=true]:bg-transparent  data-[hover=true]:bg-transparent",
               input:
-                "px-3 bg-transparent min-h-[19rem] leading-relaxed text-pretty text-base   placeholder:text-slate-500",
+                "px-3 bg-transparent min-h-[22.5rem] leading-relaxed text-pretty text-base   placeholder:text-slate-500",
             }}
             fullWidth
             value={text}
