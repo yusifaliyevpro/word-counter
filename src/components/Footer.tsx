@@ -1,5 +1,5 @@
 import FooterStat from "./FooterStat";
-import { formatTime, timeCalculator } from "./utils";
+import { timeCalculator } from "./utils";
 
 export default function FooterStats({ text }: { text: string }) {
   const { readingTime, speakingTime, handwritingTime } = timeCalculator(text);
