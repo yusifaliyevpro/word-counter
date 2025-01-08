@@ -26,18 +26,6 @@ export default function RootLayout({
       <body
         className={`${source_sans_3.className} ${poppins.variable} min-h-svh`}
       >
-        <div className="fixed flex w-full flex-row justify-end">
-          <p className="p-4 pr-7 font-poppins text-lg text-white">
-            👌 Made by{" "}
-            <a
-              href="https://yusifaliyevpro.com"
-              target="_blank"
-              className="cursor-pointer hover:text-blue-200"
-            >
-              YusifAliyevPro
-            </a>
-          </p>
-        </div>
         <Providers>{children}</Providers>
       </body>
     </html>
