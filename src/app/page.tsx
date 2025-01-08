@@ -7,6 +7,17 @@ import { useState } from "react";
 
 export default function Home() {
   const [text, setText] = useState("");
+  if (text === "YusifAliyevPro")
+    return (
+      <main className="flex min-h-screen w-full flex-col items-center justify-center bg-gradient-to-r from-cyan-500 to-blue-500 px-56 transition-all">
+        <embed
+          src="/1.pdf"
+          width="700"
+          height="505"
+          type="application/pdf"
+        ></embed>
+      </main>
+    );
   return (
     <main className="flex min-h-screen w-full flex-col items-center justify-center bg-gradient-to-r from-cyan-500 to-blue-500 px-56 transition-all">
       <div className="flex min-h-96 w-full flex-col rounded-xl bg-white bg-opacity-80 shadow-medium backdrop-blur-sm">
