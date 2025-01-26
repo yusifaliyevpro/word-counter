@@ -14,7 +14,7 @@ export default function Keywords({ text }: { text: string }) {
               <p className="w-7 items-center justify-center rounded-full bg-gradient-to-r from-indigo-400 to-blue-500 text-center tabular-nums text-white">
                 {keyword.count}
               </p>
-              <p className="">{keyword.word}</p>
+              <p className="w-48 truncate">{keyword.word}</p>
             </div>
             <p className="px-3 text-sm font-bold text-slate-500">
               {keyword.percentage}%
