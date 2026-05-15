@@ -1,9 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@import "@heroui/styles";
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@theme {
+  --color-gray-400: #becad7;
+}
+
+@layer components {
+  .separator {
+    @apply bg-gray-400;
+  }
+  .separator--vertical {
+    @apply bg-gray-400;
   }
 }

@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins, Source_Code_Pro } from "next/font/google";
 import "./globals.css";
-import Providers from "@/components/Providers";
 
 const source_sans_3 = Source_Code_Pro({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -13,13 +12,11 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Count Word by Yusif Aliyev",
-  description:
-    "You can use this app as a text editor to count words and get statistics",
+  description: "You can use this app as a text editor to count words and get statistics",
   authors: [{ name: "Yusif Aliyev", url: "https://yusifaliyevpro.com/" }],
   openGraph: {
     title: "Count Word by YusifAliyevPro",
-    description:
-      "You can use this app as a text editor to count words and get statistics",
+    description: "You can use this app as a text editor to count words and get statistics",
     images: [
       {
         url: "/Count-Word.png",
@@ -38,11 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${source_sans_3.className} ${poppins.variable} min-h-svh`}
-      >
-        <Providers>{children}</Providers>
-      </body>
+      <body className={`${source_sans_3.className} ${poppins.variable} min-h-svh`}>{children}</body>
     </html>
   );
 }

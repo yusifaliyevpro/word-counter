@@ -1,4 +1,5 @@
-import { cn, Tooltip } from "@nextui-org/react";
+import { Tooltip } from "@heroui/react";
+import { cn } from "@/lib/cn";
 
 type StatProps = {
   label: string;
@@ -17,29 +18,23 @@ export default function HeaderStat({
   classNames,
 }: StatProps) {
   return (
-    <Tooltip
-      color="primary"
-      isDisabled={!tooltipContent}
-      content={tooltipContent}
-    >
-      <p
-        className={cn(
-          "flex flex-col items-center justify-center text-nowrap px-6 text-sm text-slate-600",
-          classNames?.p,
-        )}
-      >
-        {label}
-        <span
+    <Tooltip isDisabled={!tooltipContent}>
+      <Tooltip.Content>{tooltipContent}</Tooltip.Content>
+      <Tooltip.Trigger>
+        <p
           className={cn(
-            "text-nowrap text-2xl font-bold text-gray-900",
-            classNames?.span,
+            "flex flex-col items-center justify-center px-6 text-sm text-nowrap text-slate-600",
+            classNames?.p,
           )}
         >
-          {number}
-          {measurement === "time" && "m"} {secondNumber}
-          {measurement === "time" && "s"}
-        </span>
-      </p>
+          {label}
+          <span className={cn("text-2xl font-bold text-nowrap text-gray-900", classNames?.span)}>
+            {number}
+            {measurement === "time" && "m"} {secondNumber}
+            {measurement === "time" && "s"}
+          </span>
+        </p>
+      </Tooltip.Trigger>
     </Tooltip>
   );
 }
