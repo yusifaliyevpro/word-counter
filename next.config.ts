@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   experimental: {
     useTypeScriptCli: true,
     turbopackRustReactCompiler: true,
-  }
+  },
 };
 
 export default nextConfig;

@@ -1,7 +1,7 @@
 import { defineConfig } from "oxlint";
 
 export default defineConfig({
-  plugins: ["typescript", "nextjs", "unicorn", "import", "react", "react-perf", "vitest"],
+  plugins: ["typescript", "nextjs", "unicorn", "import", "react", "react-perf"],
   categories: {
     suspicious: "warn",
   },
@@ -15,7 +15,7 @@ export default defineConfig({
     "import/no-unassigned-import": [
       "warn",
       {
-        allow: ["**/globals.css", "**/env.server", "dotenv/config", "server-only", "@sanity/client", "swiper/css"],
+        allow: ["**/globals.css"],
       },
     ],
     "react/react-in-jsx-scope": "off",

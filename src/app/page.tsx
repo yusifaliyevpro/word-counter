@@ -1,10 +1,10 @@
 "use client";
 
+import { TextArea } from "@heroui/react";
+import { useState } from "react";
 import FooterStats from "@/components/Footer";
 import HeaderStats from "@/components/Header";
 import Keywords from "@/components/Keywords";
-import { TextArea } from "@heroui/react";
-import { useState } from "react";
 
 export default function Home() {
   const [text, setText] = useState("");

@@ -1,9 +1,9 @@
 import { Separator } from "@heroui/react";
 import HeaderStat from "./HeaderStat";
-import { WordCalculator } from "./utils";
+import { wordCalculator } from "./utils";
 
 export default function HeaderStats({ text }: { text: string }) {
-  const { words, characters, sentences, paragraphs, all } = WordCalculator(text);
+  const { words, characters, sentences, paragraphs, all } = wordCalculator(text);
 
   return (
     <header className="flex w-full flex-row items-center justify-center border-b border-gray-400 px-7 py-5 transition-all">

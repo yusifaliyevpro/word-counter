@@ -1,6 +1,6 @@
 import { Tooltip } from "@heroui/react";
-import { formatTime } from "./utils";
 import { cn } from "@/lib/cn";
+import { formatTime } from "./utils";
 
 type StatProps = {
   label: string;
