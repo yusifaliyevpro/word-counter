@@ -28,6 +28,8 @@ export const metadata: Metadata = {
   },
 };
 
+export const ensureStatic = "navigation";
+
 export default function RootLayout({
   children,
 }: Readonly<{
