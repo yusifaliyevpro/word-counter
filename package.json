@@ -35,7 +35,7 @@
     "greenly": "1.2.0",
     "oxfmt": "0.78.0",
     "oxlint": "1.93.0",
-    "oxlint-tsgolint": "7.0.2006",
+    "oxlint-tsgolint": "7.0.2007",
     "postcss-load-config": "6.0.1",
     "tailwindcss": "4.3.5",
     "typescript": "7.0.2"
